@@ -9,15 +9,7 @@ app.use('/robots.txt', function (req, res, next) {
 });
 
 app.get('/.well-known/assetlinks.json', (req, res, next) => {
-    res.status(200).json({
-        "relation": ["delegate_permission/common.handle_all_urls"],
-        "target": {
-          "namespace": "android_app",
-          "package_name": "com.winghang.hk.uat",
-          "sha256_cert_fingerprints":
-          ["F0:E2:27:0C:A9:55:DE:C5:40:73:6A:44:64:AD:B8:95:59:E0:4C:76:21:6A:F8:FF:31:4B:46:9A:3B:75:A3:69"]
-        }
-    });
+    res.status(200).sendFile(__dirname +'/assets.json');
     next();
 });
 

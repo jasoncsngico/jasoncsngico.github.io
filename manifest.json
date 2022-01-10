@@ -1,5 +1,6 @@
 {
     "short_name": "ocbcapp",
+    "name":"ocbcapp",
     "icons": [
         {
             "src": "/images/ic_launcher.png",

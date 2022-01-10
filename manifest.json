@@ -1,4 +1,17 @@
 {
+    "short_name": "ocbcapp",
+    "icons": [
+        {
+            "src": "/images/ic_launcher.png",
+            "type": "image/png",
+            "sizes": "192x192"
+        },
+        {
+            "src": "/images/ic_launcher512.png",
+            "type": "image/png",
+            "sizes": "192x192"
+        }
+    ],
     "prefer_related_applications": true,
     "related_applications": [
         {

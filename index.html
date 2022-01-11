@@ -140,6 +140,7 @@
     const installBanner = document.querySelector('.smartInstallBanner');
     installBanner.style.display = 'none';
     const installBannerCloseBtn =  document.querySelector('.smartInstallBanner-close');
+    console.log("hello")
 
     window.addEventListener('beforeinstallprompt', (e) => {
         // Prevent Chrome 67 and earlier from automatically showing the prompt
@@ -148,6 +149,8 @@
         deferredPrompt = e;
         // Update UI notify the user they can add to home screen
         installBanner.style.display = 'block';
+
+        console.log("I am here")
 
     });
 
